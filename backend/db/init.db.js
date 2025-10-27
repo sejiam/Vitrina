@@ -1,5 +1,5 @@
 import db from "./config.db.js";
-import * as Queries from "./queries.db.js";
+import * as Queries from "./tables.queries.db.js";
 
 export default async function initDB() {
   try {
@@ -10,8 +10,8 @@ export default async function initDB() {
     await db.query(Queries.createOrderItemsTable);
     await db.query(Queries.createReviewTable);
     await db.query(Queries.createCartItemsTable);
-    console.log("db tables initiated");
+    console.log("db tables initialized");
   } catch (error) {
-    console.log("error in tables initiation: ", error);
+    console.log("error in tables initialized: ", error);
   }
 }
