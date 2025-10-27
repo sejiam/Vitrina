@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import "./config/env.js";
-import initDB from "./db/db.init.js";
+import "./configs/env.js";
+import initDB from "./db/init.db.js";
 
 const app = express();
 const PORT = process.env.SERVER_PORT || 3001;

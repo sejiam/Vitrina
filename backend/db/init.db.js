@@ -1,5 +1,5 @@
-import db from "./db.config.js";
-import * as Queries from "./db.queries.js";
+import db from "./config.db.js";
+import * as Queries from "./queries.db.js";
 
 export default async function initDB() {
   try {
