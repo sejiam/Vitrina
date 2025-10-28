@@ -22,9 +22,9 @@ export async function handleGetUserById(req, res) {
 
 export async function handleCreateUser(req, res) {
   try {
-    const product_data = req.body;
-    const newProduct = await Model.createUser(product_data);
-    res.status(201).json({ data: newProduct });
+    const user_data = req.body;
+    const newUser = await Model.createUser(user_data);
+    res.status(201).json({ data: newUser });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
