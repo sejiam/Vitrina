@@ -9,7 +9,7 @@ export async function handleGetAllCategories(req, res) {
   }
 }
 
-export async function handleGetCategoryById(req, res) {
+export async function handleGetCategoryByID(req, res) {
   try {
     const category_id = req.params.id;
     const category = await Model.getCategoryByID(category_id);
